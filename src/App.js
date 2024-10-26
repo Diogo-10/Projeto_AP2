@@ -1,10 +1,15 @@
 
-import Logo from './Componentes/Logo'
-import imagem from "./imagens/Logotipo_LosHermanos.png"
-import OpcoesHeader from './Componentes/Logo';
+import './App.css';
+import Logo from './Componentes/Logo';
+import perfil from './imagens/perfil.jpg';
+import sacola from './imagens/sacola.png';
+import OpcoesHeader from './Componentes/OpcoesHeader';
+import IconesHeader from './Componentes/IconesHeader';
 
 
-const icones = [imagem]
+
+
+const icones = [perfil, sacola]
 
 function App(){
     return(
@@ -12,6 +17,7 @@ function App(){
           <header className="App-header">
             <Logo></Logo>
             <OpcoesHeader></OpcoesHeader>
+            <IconesHeader></IconesHeader>
 
           <ul className='icones'>
             { icones.map((icone) => ( 

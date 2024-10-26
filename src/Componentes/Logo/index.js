@@ -1,15 +1,13 @@
+import Loguinho from '../../imagens/perfil.jpg'
 
-const TOpcao = ['Texto 01', 'Texto 02', 'Texto03']
-
-function OpcoesHeader(){
+function Logo(){
     return(
-
-        <ul className='opcao'>
-        { TOpcao.map( (texto) => (
-            <li className="opções"> <p>{texto}</p> </li>
-        ) ) }    
-        </ul>
-
+    
+    <ul className='Loguinho'>
+       <img src={Loguinho} width={"50"} height={"50"}></img>
+         
+    </ul>
+    
     )
-}
-export default OpcoesHeader
+    }
+export default Logo
